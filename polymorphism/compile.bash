@@ -1,5 +1,5 @@
 #!/bin/bash
 #compile c ++
-g++ classes.cpp -o classes
+g++ polyMorph.cpp -o polyMorph
 #execute binaries
-./classes
+./polyMorph
