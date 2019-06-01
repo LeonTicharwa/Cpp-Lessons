@@ -7,6 +7,16 @@ C++ Conventions
 3.) Use 'get<VariableName>' for accessing private variables Use 'set<VariableName>' for assigning values to private variables
 4.) You will need to signify that the functions are part of the class definition by using the namespace <classname>::
 
+C++ supports 3 types of inheritance
+    * Public
+        Derived class inherits all the member variables of a base class, (both private and public) but it can 
+        only directly access the public members of the base class.                                                                                                                                                                                                                                                                                                                                                               
+    * Private 
+    * Protected
 
-Memory Management 
+Inheritance 
 
+| Public        |   Protected   | Private   |
+| ------------- | ------------- |-----------|
+|public members are public in derived class and can be accessed directly by member functions and nonmember functions  | public members become protected members in derived class and can be accessed directly by member functions  |public members become private in derived class and can be accessed directly by member functions           |
+| protected members are protected in derived class and can be accessed directly by member functions  | protected members become protected members in derived class and can be accessed directly by member functions  | protected members become private in derived class and can be accessed directly by member functions          |    
