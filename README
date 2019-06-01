@@ -8,15 +8,57 @@ C++ Conventions
 4.) You will need to signify that the functions are part of the class definition by using the namespace <classname>::
 
 C++ supports 3 types of inheritance
-    * Public
-        Derived class inherits all the member variables of a base class, (both private and public) but it can 
-        only directly access the public members of the base class.                                                                                                                                                                                                                                                                                                                                                               
-    * Private 
-    * Protected
+    * Public Inheritance
+        (public members)
+        - Derived class inherits all the member variables of a base class, (both private and public) but it can 
+        only directly access the public members of the base class. 
+        - Public members are public in derived class and can be accessed directly by member 
+        functions and nonmember functions
+        
+        (protected members)
+        - protected members are protected in derived class and can be accessed directly by 
+        member functions
+
+        (private members)
+        - private members are hidden in derived class and can be accessed by member functions
+        though public or protected member functions
 
 Inheritance 
+    * Protected Inheritance
+        (public members)
+        - public members become protected members in derived class and can be accessed directly 
+        by member functions
+        
+        (protected members)
+        - protected members become protected members in derived class and can be accessed directly 
+        by member functions
 
-| Public | Protected | Private |
-| :--- | --- | ---: |
-| public members are public in derived class and can be accessed directly by member functions and nonmember functions | public members become protected members in derived class and can be accessed directly by member functions | public members become private in derived class and can be accessed directly by member functions |
-| protected members are protected in derived class and can be accessed directly by member functions | protected members become protected members in derived class and can be accessed directly by member functions | protected members become private in derived class and can be accessed directly by member functions |
+        (private members)
+        - private members are hidden in derived class and can be accessed by member functions through 
+        public or protected member functions
+   
+    * Private Inheritance
+        (public members)
+        - public members become private in derived class and can be accessed directly by member functions
+        - protected members become private in derived class and can be accessed directly by member functions
+        - private members are hidden in derived class and can be accessed by member functions through public 
+        or protected member functions
+
+
+    *public Inheritance
+        (public members)
+        - public members are public in derived class and can be accessed directly by member functions and 
+        nonmember functions
+        - protected members are protected in derived class and can be accessed directly by member functions
+        - private members are hidden in derived class and can be accessed by member functions though public 
+        or protected member functions
+
+    * You can initialize members of the base class by calling the base class constructor from your derived class
+    * It is recommended that you make the call to the base class constructor as the first thing in your derived 
+    class to ensure that member variables in the base class are initialized before they are accessed or used in the derived class.
+    The way to call the base class constructor from your derived class is demonstrated here.
+
+    Student::Student():Person("Tom", "Thumb")
+    {
+    }
+ 
