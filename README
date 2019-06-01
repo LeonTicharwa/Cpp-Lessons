@@ -19,9 +19,4 @@ Inheritance
 | Public | Protected | Private |
 | :--- | --- | ---: |
 | public members are public in derived class and can be accessed directly by member functions and nonmember functions | public members become protected members in derived class and can be accessed directly by member functions | public members become private in derived class and can be accessed directly by member functions |
-| protected members are protected in derived class and can be accessed directly by member functions | protected members become protected members in derived class and can be accessed directly by member functions | protected members become private in derived class and can be accessed directly by member functions |    
-
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| protected members are protected in derived class and can be accessed directly by member functions | protected members become protected members in derived class and can be accessed directly by member functions | protected members become private in derived class and can be accessed directly by member functions |
