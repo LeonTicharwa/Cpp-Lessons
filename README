@@ -1,0 +1,12 @@
+C++ Conventions 
+
+1.) Capitalize the first letter of the classname.
+2.) Private members are listed first. If you do this, 
+    there is no need to use the 'private' keyword. If you list them after the public keyword, 
+    you will need to identify them using the private keyword.
+3.) Use 'get<VariableName>' for accessing private variables Use 'set<VariableName>' for assigning values to private variables
+4.) You will need to signify that the functions are part of the class definition by using the namespace <classname>::
+
+
+Memory Management 
+

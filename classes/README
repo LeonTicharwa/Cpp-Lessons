@@ -1,0 +1,47 @@
+A class in C++ is a user defined data type.
+C++ classes can have functions as well as data
+functions in classes are also called methods
+We want the access functions to be public
+So we add the keyword "public" and all members listed after it are accessible
+The nice thing about C++ classes, the default is to make all members private. 
+This means only other members of the class can access the data.
+We can use functions to access the data in a class.
+
+Get functions return the data, so get functions use  the variable type of the returned data when being declared
+For example: To access the data called name, the function declaration would be:
+
+We would like to have the information associated with each student. So let's say our Student data type has:
+Functions that access and/or modify data values in classes are called mutators. 
+ * a name
+ * an id number
+ * a graduation date
+ * These three are members of Student.
+
+The syntax for a class is:
+
+        class ClassName
+        {
+            member1;
+            member2;
+            ...
+
+        public:
+            return variable accessFunction1(function parameters);
+            return variable accessFunction2(function parameters); 
+            ...
+        } ;
+
+        returnVariable ClassName:: accessFunction1(function parameters)
+        {
+            function statements;
+        }
+
+        returnVariable ClassName:: accessFunction2(function parameters)
+        {
+            function statements;
+        }
+
+As an aside, some conventions list the public definitions first, including the Google C++ Style Guide. 
+It is best to use the convention used by the company paying you to code.
+
+
